@@ -27,7 +27,7 @@ connectDb();
 
 const app = express();
 const corsOptions = {
-  origin: 'https://gimex-ortho-mongo-frontend.vercel.app/',
+  origin: ['https://gimex-ortho-mongo-frontend.vercel.app/','https://gimex-ortho-mongo-frontend-aayush-thorats-projects.vercel.app/','https://gimex-ortho-mongo-frontend-git-main-aayush-thorats-projects.vercel.app/'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
   optionsSuccessStatus: 200
