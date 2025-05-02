@@ -27,7 +27,7 @@ connectDb();
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
   optionsSuccessStatus: 200
@@ -58,7 +58,7 @@ app.use((req, res)=>{
 });
 
 //start the server  
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running in development mode on port ${PORT}`);
 });
